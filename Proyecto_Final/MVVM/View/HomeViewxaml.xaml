@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="Proyecto_Final.MVVM.View.HomeViewxaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Proyecto_Final.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="405" d:DesignWidth="603">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Border Width="400"
+                    Height="100"
+                    Margin="10,10,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                        <GradientStop Color="#232526" Offset="0.1"/>
+                        <GradientStop Color="#414345" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid>
+
+                    <TextBlock Text="The Neighbourhood"
+                               Foreground="White"
+                               FontSize="27"
+                               Margin="138,29,19,0"/>
+                    <Image Source="/Images/csa.jpg" Margin="0,-26,273,-26" Width="133"/>
+
+                </Grid>
+
+
+            </Border>
+            <Border Width="400"
+                    Height="100"                     
+                    Margin="20,10,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                        <GradientStop Color="#232526" Offset="0.0"/>
+                        <GradientStop Color="#414345" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+
+
+                <Grid>
+                    <TextBlock Text="Bad bunny" Foreground="White"
+                               FontSize="27"
+                               Margin="121,30,-61,0"/>
+                    <Image Source="/Images/Bad-bunny.jpeg" Margin="-44,0,255,0"/>
+
+                </Grid>
+            </Border>
+
+        </StackPanel>
+        <StackPanel Height="300" Width="850">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+
+
+            <TextBlock Text="Tus Artistas Favoritos" 
+                       Foreground="White"
+                       FontSize="30"
+                       Margin="20,10,10,0"/>
+            <StackPanel Orientation="Horizontal" Height="200" Width="850">
+                <Border Width="260"
+                    Height="230"
+                    CornerRadius="10">
+                    <Grid>
+                        <TextBlock Text="C.R.O"
+                               Foreground="White"
+                               FontSize="30"
+                               Margin="20,10,128,0"/>
+
+                        <Image Height="226"
+                           Width="259"
+                           Source="/Images/c.r.o.png"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Left" Margin="68,-6,0,0"/>
+                    </Grid>
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#000000" Offset="0.0"/>
+                            <GradientStop Color="#434343" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="50"
+                                       RadiusY="50"
+                                       Rect="0,0,250,200"/>
+                    </Border.Clip>
+                </Border>
+
+                <Border Width="260"
+                    Height="230"
+                    CornerRadius="10">
+                    <Grid>
+                        <TextBlock Text="Bizarrap"
+                               Foreground="White"
+                               FontSize="30"
+                               Margin="20,10,128,0"/>
+                        <Image Source="/Images/Bizarrap.png" Margin="32,-7,-37,7"/>
+
+                    </Grid>
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#000000" Offset="0.0"/>
+                            <GradientStop Color="#434343" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="50"
+                                       RadiusY="50"
+                                       Rect="0,0,250,200"/>
+                    </Border.Clip>
+                </Border>
+                <Border Width="260"
+                    Height="200"
+                    CornerRadius="10">
+                    <Grid>
+                        <TextBlock Text="Duki"
+                               Foreground="White"
+                               FontSize="30"
+                               Margin="20,10,128,0"/>
+                        <Image Source="/Images/Dukii.png" Margin="-51,-64,-139,-74" />
+                    </Grid>
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#000000" Offset="0.0"/>
+                            <GradientStop Color="#434343" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="50"
+                                       RadiusY="50"
+                                       Rect="0,0,250,200"/>
+                    </Border.Clip>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

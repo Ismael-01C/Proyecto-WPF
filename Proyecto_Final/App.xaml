@@ -1,0 +1,34 @@
+﻿<Application x:Class="Proyecto_Final.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Proyecto_Final"
+             xmlns:viewModel="clr-namespace:Proyecto_Final.MVVM.ViewModel"
+             xmlns:view="clr-namespace:Proyecto_Final.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/Stilos.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                <view:HomeViewxaml/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:BusquedaArtistaViewModel}">
+                <view:BusquedaArtista/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:BusquedaImagenViewModel}">
+                <view:BusquedaImagen/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:BusquedaDetallesViewModel}">
+                <view:BusquedaDetalles/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

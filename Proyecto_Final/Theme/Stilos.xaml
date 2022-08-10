@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DataTemplate x:Key="ResultadoSimplePlantilla">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="15" VerticalAlignment="Center">
+                <TextBlock Width="550"
+                           FontSize="15"
+                           Foreground="DarkGray"
+                           Text="{Binding Name}"
+                           TextTrimming="CharacterEllipsis">
+                    
+                    
+                </TextBlock>
+                
+            </StackPanel>
+            
+        </StackPanel>
+        
+    </DataTemplate>
+    
+</ResourceDictionary>
