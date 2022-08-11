@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Proyecto_Final"
         xmlns:viewModel="clr-namespace:Proyecto_Final.MVVM.ViewModel"
         mc:Ignorable="d"
-        Height="500" Width="850"
+        Height="768" Width="1366"
         WindowStyle="None" 
         WindowState="Maximized"
         ResizeMode="NoResize" 
@@ -39,7 +39,7 @@
                         Grid.Column="1"
                         Margin="10"
                         Content="{Binding CurrentView}"/>
-            
+
             <TextBlock Text="Spotify" 
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 
@@ -48,66 +48,63 @@
                        Margin="80,5,10,8" />
 
             <StackPanel Grid.Row="1">
-                <StackPanel Orientation="Horizontal" >
+                
+                <StackPanel Orientation="Horizontal" Height="82" >
                     <RadioButton Background="White"
-                                 Height="36"
-                                 Width="90"
+                                 Height="60"
+                                 Width="150"
                                  FontSize="14"
                                  IsChecked="True"
                                  Style="{StaticResource MenuButtonTheme}"
-                                 Margin="10,0,0,0"
                                  Command="{Binding HomeViewCommand}">
                         <RadioButton.OpacityMask >
-                            <ImageBrush ImageSource="/Images/INICIO.png" Stretch="Uniform"/>
+                            <ImageBrush ImageSource="/Images/inicio.png" Stretch="Uniform"/>
                         </RadioButton.OpacityMask>
                     </RadioButton>
                 </StackPanel>
 
 
-                <StackPanel Orientation="Horizontal" >
+                <StackPanel Orientation="Horizontal" Height="82">
                     <RadioButton Background="White"
-                                 Height="36"
-                                 Width="90"
+                                 Height="60"
+                                 Width="150"
                                  FontSize="14"
                                  Style="{StaticResource MenuButtonTheme}"
-                                 Margin="10,0,0,0"
                                  Command="{Binding BusquedaArtistaCommand}">
                         <RadioButton.OpacityMask >
-                            <ImageBrush ImageSource="/Images/bus.png" Stretch="Uniform"/>
+                            <ImageBrush ImageSource="/Images/artista.png" Stretch="Uniform"/>
                         </RadioButton.OpacityMask>
                     </RadioButton>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" >
+                <StackPanel Orientation="Horizontal" Height="82">
                     <RadioButton Background="White"
-                                 Height="36"
-                                 Width="90"
+                                 Height="60"
+                                 Width="150"
                                  FontSize="14"
                                  Style="{StaticResource MenuButtonTheme}"
-                                 Margin="10,0,0,0"
                                  Command="{Binding BusquedaImagenCommand}">
                         <RadioButton.OpacityMask >
-                            <ImageBrush ImageSource="/Images/INICIO.png" Stretch="Uniform"/>
+                            <ImageBrush ImageSource="/Images/imagen.png" Stretch="Uniform"/>
                         </RadioButton.OpacityMask>
                     </RadioButton>
                 </StackPanel>
 
-                <StackPanel Orientation="Horizontal" >
+                <StackPanel Orientation="Horizontal" Height="82">
                     <RadioButton Background="White"
-                                 Height="36"
-                                 Width="90"
+                                 Height="60"
+                                 Width="150"
                                  FontSize="14"
                                  Style="{StaticResource MenuButtonTheme}"
-                                 Margin="10,0,0,0"
                                  Command="{Binding BusquedaDetallesCommand}">
                         <RadioButton.OpacityMask >
-                            <ImageBrush ImageSource="/Images/INICIO.png" Stretch="Uniform"/>
+                            <ImageBrush ImageSource="/Images/detalles.png" Stretch="Uniform"/>
                         </RadioButton.OpacityMask>
                     </RadioButton>
                 </StackPanel>
             </StackPanel>
 
-            
+
         </Grid>
 
 

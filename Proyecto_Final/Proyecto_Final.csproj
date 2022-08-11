@@ -125,6 +125,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Theme\searchStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Theme\Stilos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -178,9 +182,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Fonts\" />
   </ItemGroup>
   <ItemGroup>
@@ -193,19 +194,22 @@
     <Resource Include="Images\Bizarrap.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\csa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Bad-bunny.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\home.png" />
+    <Resource Include="Images\mon.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\INICIO.png" />
+    <Resource Include="Images\maria.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\bus.png" />
+    <Resource Include="Images\csa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Artista.png" />
+    <Resource Include="Images\Detalles.png" />
+    <Resource Include="Images\Imagen.png" />
+    <Resource Include="Images\inicio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

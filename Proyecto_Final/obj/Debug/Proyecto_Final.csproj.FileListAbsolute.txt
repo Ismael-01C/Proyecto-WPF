@@ -49,3 +49,4 @@ C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\bin\Debug\System.Threading.Tas
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\bin\Debug\System.ValueTuple.xml
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\Theme\Stilos.baml
+C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\Theme\searchStyle.baml

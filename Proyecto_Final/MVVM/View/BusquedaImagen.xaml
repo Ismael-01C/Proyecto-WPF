@@ -23,7 +23,7 @@
             </TextBox>
             <ListView
             x:Name="ListArtist"
-            Height="350"
+            Height="427"
             ItemTemplate="{StaticResource ResourceKey=ResultadoImagenPlantilla}">
 
 

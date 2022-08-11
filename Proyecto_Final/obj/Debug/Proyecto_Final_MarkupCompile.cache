@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\App.xaml
-7-1965895968
+8-571942158
 
 21401981520
 261171415867
-MainWindow.xaml;MVVM\View\BusquedaArtista.xaml;MVVM\View\BusquedaDetalles.xaml;MVVM\View\BusquedaImagen.xaml;MVVM\View\HomeViewxaml.xaml;Theme\MenuButtonTheme.xaml;Theme\Stilos.xaml;
+MainWindow.xaml;MVVM\View\BusquedaArtista.xaml;MVVM\View\BusquedaDetalles.xaml;MVVM\View\BusquedaImagen.xaml;MVVM\View\HomeViewxaml.xaml;Theme\MenuButtonTheme.xaml;Theme\searchStyle.xaml;Theme\Stilos.xaml;
 
 False
 

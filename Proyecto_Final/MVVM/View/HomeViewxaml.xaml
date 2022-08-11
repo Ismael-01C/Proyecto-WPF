@@ -5,57 +5,95 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Proyecto_Final.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="405" d:DesignWidth="603">
+             d:DesignHeight="768" d:DesignWidth="1366  ">
     <StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Border Width="400"
+        <StackPanel Orientation="Horizontal"
+                    Height="326"
+                    >
+
+
+
+            <StackPanel Width="1020" Height="394">
+                <Border Width="400"
                     Height="100"
-                    Margin="10,10,0,0">
+                    Margin="-300,20,0,0">
 
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
-                        <GradientStop Color="#232526" Offset="0.1"/>
-                        <GradientStop Color="#414345" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-                <Grid>
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#232526" Offset="0.1"/>
+                            <GradientStop Color="#414345" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
 
-                    <TextBlock Text="The Neighbourhood"
+                        <TextBlock Text="The Neighbourhood"
                                Foreground="White"
                                FontSize="27"
                                Margin="138,29,19,0"/>
-                    <Image Source="/Images/csa.jpg" Margin="0,-26,273,-26" Width="133"/>
+                        <Image Source="/Images/csa.jpg" Margin="0,-6,300,-6"/>
 
-                </Grid>
+                    </Grid>
 
 
-            </Border>
-            <Border Width="400"
+                </Border>
+                <Border Width="400"
                     Height="100"                     
-                    Margin="20,10,0,0">
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
-                        <GradientStop Color="#232526" Offset="0.0"/>
-                        <GradientStop Color="#414345" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-
-
-
-                <Grid>
-                    <TextBlock Text="Bad bunny" Foreground="White"
+                    Margin="-300,20,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#232526" Offset="0.0"/>
+                            <GradientStop Color="#414345" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <TextBlock Text="Bad bunny" Foreground="White"
                                FontSize="27"
                                Margin="121,30,-61,0"/>
-                    <Image Source="/Images/Bad-bunny.jpeg" Margin="-44,0,255,0"/>
+                        <Image Source="/Images/Bad-bunny.jpeg" Margin="-44,0,255,0"/>
 
-                </Grid>
-            </Border>
+                    </Grid>
+                </Border>
 
+                <Border Width="400"
+                    Height="100"                     
+                    Margin="616,-99,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#232526" Offset="0.0"/>
+                            <GradientStop Color="#414345" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <TextBlock Text="Maria Becerra" Foreground="White"
+                               FontSize="27"
+                               Margin="121,30,-61,0"/>
+                        <Image Source="/Images/maria.jpeg" Margin="-12,0,288,0"/>
+
+                    </Grid>
+                </Border>
+                <Border Width="400"
+                    Height="100"                     
+                    Margin="608,-338,0,0">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#232526" Offset="0.0"/>
+                            <GradientStop Color="#414345" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <TextBlock Text="Mon laferte" Foreground="White"
+                               FontSize="27"
+                               Margin="121,30,-61,0"/>
+                        <Image Source="/Images/mon.jpeg" Margin="-58,0,255,0"/>
+
+                    </Grid>
+                </Border>
+            </StackPanel>
         </StackPanel>
-        <StackPanel Height="300" Width="850">
+        <StackPanel Height="300" Width="982">
             <StackPanel.Resources>
                 <Style TargetType="{x:Type Border}">
-                    <Setter Property="Margin" Value="15,0,0,0"/>
+                    <Setter Property="Margin" Value="20,0,0,0"/>
                 </Style>
             </StackPanel.Resources>
 
@@ -68,6 +106,17 @@
                 <Border Width="260"
                     Height="230"
                     CornerRadius="10">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
+                            <GradientStop Color="#000000" Offset="0.0"/>
+                            <GradientStop Color="#434343" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="50"
+                                       RadiusY="50"
+                                       Rect="0,0,250,200"/>
+                    </Border.Clip>
                     <Grid>
                         <TextBlock Text="C.R.O"
                                Foreground="White"
@@ -80,6 +129,11 @@
                            VerticalAlignment="Top"
                            HorizontalAlignment="Left" Margin="68,-6,0,0"/>
                     </Grid>
+                </Border>
+
+                <Border Width="260"
+                    Height="230"
+                    CornerRadius="10">
                     <Border.Background>
                         <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
                             <GradientStop Color="#000000" Offset="0.0"/>
@@ -91,11 +145,6 @@
                                        RadiusY="50"
                                        Rect="0,0,250,200"/>
                     </Border.Clip>
-                </Border>
-
-                <Border Width="260"
-                    Height="230"
-                    CornerRadius="10">
                     <Grid>
                         <TextBlock Text="Bizarrap"
                                Foreground="White"
@@ -104,6 +153,10 @@
                         <Image Source="/Images/Bizarrap.png" Margin="32,-7,-37,7"/>
 
                     </Grid>
+                </Border>
+                <Border Width="260"
+                    Height="200"
+                    CornerRadius="10">
                     <Border.Background>
                         <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
                             <GradientStop Color="#000000" Offset="0.0"/>
@@ -115,10 +168,6 @@
                                        RadiusY="50"
                                        Rect="0,0,250,200"/>
                     </Border.Clip>
-                </Border>
-                <Border Width="260"
-                    Height="200"
-                    CornerRadius="10">
                     <Grid>
                         <TextBlock Text="Duki"
                                Foreground="White"
@@ -126,17 +175,6 @@
                                Margin="20,10,128,0"/>
                         <Image Source="/Images/Dukii.png" Margin="-51,-64,-139,-74" />
                     </Grid>
-                    <Border.Background>
-                        <LinearGradientBrush StartPoint="1,0" EndPoint="1,2">
-                            <GradientStop Color="#000000" Offset="0.0"/>
-                            <GradientStop Color="#434343" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Border.Background>
-                    <Border.Clip>
-                        <RectangleGeometry RadiusX="50"
-                                       RadiusY="50"
-                                       Rect="0,0,250,200"/>
-                    </Border.Clip>
                 </Border>
             </StackPanel>
         </StackPanel>
