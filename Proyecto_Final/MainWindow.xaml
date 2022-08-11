@@ -16,7 +16,12 @@
         <viewModel:MainViewModel/>
     </Window.DataContext>
 
-    <Border >
+    <Border>
+
+
+
+
+
         <Border.Background>
             <LinearGradientBrush StartPoint="0,1" EndPoint="1,3">
                 <GradientStop Color="#17202A" Offset="0.0"/>
@@ -26,6 +31,7 @@
             </LinearGradientBrush>
         </Border.Background>
         <Grid>
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
@@ -35,6 +41,7 @@
                 <RowDefinition Height="75"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+            
             <ContentControl Grid.Row="1"
                         Grid.Column="1"
                         Margin="10"
@@ -42,13 +49,29 @@
 
             <TextBlock Text="Spotify" 
                        VerticalAlignment="Center" 
-                       HorizontalAlignment="Center" 
+                       HorizontalAlignment="Left" 
                        Foreground="White" 
                        FontSize="25" 
-                       Margin="80,5,10,8" />
+                       Margin="82,0,0,0" />
+            <Image Source="/Images/spotify (1).png" Margin="-5,8,117,9"/>
+            <Button
+                    Margin="1107,0,0,9" 
+                    Background="Red" 
+                    BorderBrush=" White" 
+                    Foreground="White" 
+                    Padding="1,1,1,1" 
+                    Grid.Column="1"
+                    Command="{Binding ExitCommand}">
+                <Button.OpacityMask>
+                    <ImageBrush ImageSource="/Images/cancel.png" Stretch="Uniform"/>
+                </Button.OpacityMask>
+            </Button>
+
+
 
             <StackPanel Grid.Row="1">
-                
+
+
                 <StackPanel Orientation="Horizontal" Height="82" >
                     <RadioButton Background="White"
                                  Height="60"

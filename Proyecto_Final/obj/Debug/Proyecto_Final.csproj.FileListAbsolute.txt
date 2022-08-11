@@ -50,3 +50,5 @@ C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\bin\Debug\System.ValueTuple.xm
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\Proyecto_Final.csproj.CopyComplete
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\Theme\Stilos.baml
 C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\Theme\searchStyle.baml
+C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\MVVM\View\Exit.g.cs
+C:\Temp\ProyectoWPF\Proyecto_Final\Proyecto_Final\obj\Debug\MVVM\View\Exit.baml

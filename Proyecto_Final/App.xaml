@@ -31,6 +31,10 @@
                 <view:BusquedaDetalles/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:ExitViewModel}">
+                <view:Exit/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

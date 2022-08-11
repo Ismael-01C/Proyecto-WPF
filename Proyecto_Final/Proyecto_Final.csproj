@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>spotify_icon-icons.com_65503.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -117,6 +120,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\Exit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\HomeViewxaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -141,6 +148,7 @@
     <Compile Include="MVVM\ViewModel\BusquedaArtistaViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BusquedaDetallesViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BusquedaImagenViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\ExitViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\View\BusquedaArtista.xaml.cs">
@@ -151,6 +159,9 @@
     </Compile>
     <Compile Include="MVVM\View\BusquedaImagen.xaml.cs">
       <DependentUpon>BusquedaImagen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\Exit.xaml.cs">
+      <DependentUpon>Exit.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\HomeViewxaml.xaml.cs">
       <DependentUpon>HomeViewxaml.xaml</DependentUpon>
@@ -210,6 +221,15 @@
     <Resource Include="Images\Detalles.png" />
     <Resource Include="Images\Imagen.png" />
     <Resource Include="Images\inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spotify_icon-icons.com_65503.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\spotify %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cancel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

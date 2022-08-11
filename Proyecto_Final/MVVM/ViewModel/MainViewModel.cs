@@ -14,15 +14,17 @@ namespace Proyecto_Final.MVVM.ViewModel
 
     class MainViewModel : ObservableObject
     {
-        public RelayCommand HomeViewCommand { get; set; }  
+        public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand BusquedaArtistaCommand { get; set; }
         public RelayCommand BusquedaImagenCommand { get; set; }
         public RelayCommand BusquedaDetallesCommand { get; set; }
+        public RelayCommand ExitCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public BusquedaArtistaViewModel ArtistaVM { get; set; }
         public BusquedaImagenViewModel ImagenVM { get; set; }
         public BusquedaDetallesViewModel DetallesVM { get; set; }
+        public ExitViewModel ExitVM { get; set; }
 
 
         private object _currentView;
@@ -39,10 +41,12 @@ namespace Proyecto_Final.MVVM.ViewModel
 
         public MainViewModel()
         {
-           HomeVM = new HomeViewModel();
+            HomeVM = new HomeViewModel();
             DetallesVM = new BusquedaDetallesViewModel();
             ArtistaVM = new BusquedaArtistaViewModel();
             ImagenVM = new BusquedaImagenViewModel();
+            ExitVM = new ExitViewModel();
+
             CurrentView = HomeVM;
 
             HomeViewCommand = new RelayCommand(o =>
@@ -63,6 +67,11 @@ namespace Proyecto_Final.MVVM.ViewModel
             BusquedaDetallesCommand = new RelayCommand(o =>
             {
                 CurrentView = DetallesVM;
+            });
+
+            ExitCommand = new RelayCommand(o =>
+            {
+                CurrentView = ExitVM;
             });
         }
     }

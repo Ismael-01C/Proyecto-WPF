@@ -6,7 +6,7 @@
             <StackPanel Margin="15" VerticalAlignment="Center">
                 <TextBlock Width="550"
                            FontSize="15"
-                           Foreground="DarkGray"
+                           Foreground="White"
                            Text="{Binding Name}"
                            TextTrimming="CharacterEllipsis">
                 </TextBlock>
@@ -22,7 +22,7 @@
             <StackPanel Margin="20" VerticalAlignment="Center">
                 <TextBlock Width="450"
                            FontSize="20"
-                           Foreground="Black"
+                           Foreground="White"
                            Text="{Binding Name}"
                            TextTrimming="CharacterEllipsis">
                     <TextBlock.ToolTip>
@@ -31,10 +31,10 @@
                         </StackPanel>
                     </TextBlock.ToolTip>
                 </TextBlock>
-                <TextBlock FontSize="16" Text="{Binding Popularity}" Foreground="Black"/>
+                <TextBlock FontSize="16" Text="{Binding Popularity}" Foreground="White"/>
                 <TextBlock FontSize="16"
                            Text="{Binding Followers}"
-                           Foreground="Black"/>
+                           Foreground="White"/>
             </StackPanel>
         </StackPanel>
     </DataTemplate>
@@ -47,13 +47,13 @@
             <StackPanel Margin="20" VerticalAlignment="Center">
                 <TextBlock Width="450"
                                FontSize="20"
-                               Foreground="Black"
+                               Foreground="White"
                                Text="{Binding Name}"
                                TextTrimming="CharacterEllipsis">
                     <TextBlock.ToolTip>
                         <StackPanel>
                             <TextBlock FontSize="20"
-                                       Foreground="Black"
+                                       Foreground="White"
                                        Text="{Binding Name}"/>
                         </StackPanel>
                     </TextBlock.ToolTip>

@@ -13,17 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Proyecto_Final
+namespace Proyecto_Final.MVVM.View
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Exit.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Exit : UserControl
     {
-        public MainWindow()
+        public Exit()
         {
             InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

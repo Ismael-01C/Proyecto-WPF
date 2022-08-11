@@ -3,6 +3,7 @@ using System.Windows.Input;
 
 namespace Proyecto_Final.Core
 {
+    //son implementaciones de ICommand que pueden exponer un método o delegado a la vista.
     class RelayCommand : ICommand
     {
         private Action<object> execute;
