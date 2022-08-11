@@ -4,15 +4,30 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Proyecto_Final.MVVM.View"
+             xmlns:viewModel="clr-namespace:Proyecto_Final.MVVM.ViewModel"
+             
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <viewModel:MainViewModel/>
+    </UserControl.DataContext>
     <Grid>
-        <TextBlock Text="HOLA Imagen"
-                   Height="200"
-                   Width="200"
-                   FontSize="20">
+        <StackPanel>
+            <TextBox Height="25"
+                     Width="250"
+                     x:Name="Artista"
+                     KeyUp="etesech"
+                     Background="Aqua" 
+                     >
 
-        </TextBlock>
+            </TextBox>
+            <ListView
+            x:Name="ListArtist"
+            Height="350"
+            ItemTemplate="{StaticResource ResourceKey=ResultadoImagenPlantilla}">
 
+
+            </ListView>
+        </StackPanel>
     </Grid>
 </UserControl>
