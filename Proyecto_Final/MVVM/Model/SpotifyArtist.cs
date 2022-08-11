@@ -1,5 +1,6 @@
-﻿namespace Proyecto_Final.Models
-{
+﻿namespace Proyecto_Final.MVVM.Models
+{ 
+
     public class SpotifyArtist
     {
         public string ID { get; set; }

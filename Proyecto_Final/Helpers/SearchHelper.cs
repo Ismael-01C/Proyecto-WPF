@@ -1,12 +1,12 @@
 ﻿using Newtonsoft.Json;
 using RestSharp;
-using Proyecto_Final.Models;
+using Proyecto_Final.MVVM.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using static Proyecto_Final.Models.SpotifySearch;
+using static Proyecto_Final.MVVM.Models.SpotifySearch;
 
 namespace Proyecto_Final.Helpers
 

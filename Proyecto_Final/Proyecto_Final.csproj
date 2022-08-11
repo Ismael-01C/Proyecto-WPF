@@ -99,7 +99,8 @@
     </Compile>
     <Compile Include="Core\ObservableObject.cs" />
     <Compile Include="Core\RelayCommand.cs" />
-    <Compile Include="Helper\SearchHelper.cs" />
+    <Compile Include="Helpers\Consumo.cs" />
+    <Compile Include="Helpers\SearchHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

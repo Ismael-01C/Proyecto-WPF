@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Proyecto_Final.Helpers;
-using Proyecto_Final.Models;
+using Proyecto_Final.MVVM.Models;
 
 
 namespace Proyecto_Final.MVVM.View
