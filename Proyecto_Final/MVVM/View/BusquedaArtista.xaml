@@ -13,7 +13,8 @@
     </UserControl.DataContext>
     <Grid>
         <StackPanel>
-            <TextBox Height="25"
+            <TextBox 
+                     Height="25"
                      Width="250"
                      x:Name="Artista"
                      KeyUp="etesech"

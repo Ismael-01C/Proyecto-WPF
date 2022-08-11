@@ -1,17 +1,13 @@
-﻿using System;
+﻿using Proyecto_Final.MVVM.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Proyecto_Final.MVVM.Models;
-using Proyecto_Final.Helpers;
 using System.Windows.Controls;
 
-namespace Proyecto_Final.Consumo
+namespace Proyecto_Final.Helpers.Consumo
 {
     public class Consumo
     {
-        public void reduced(TextBox Artista, ListView ListArtist)
+        public void Reduced(TextBox Artista, ListView ListArtist)
         {
             if (Artista.Text == string.Empty)
             {
